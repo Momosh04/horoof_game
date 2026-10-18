@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(to right, rgb(14, 172, 14) 0%, rgb(14, 172, 14) 100%),linear-gradient(to right, rgb(14, 172, 14) 0%, rgb(14, 172, 14) 100%);
+    background-size: 100% 14%;
+    background-position: center top,center bottom;
+    background-repeat: no-repeat;
+    background-color: orange;
+}
+.container > div {
+    display: flex;
+    
+    justify-content: center;
+    
+}
+.container > div > div {
+    border-style: solid;
+    border-top: 0px;
+    border-bottom: 0px;
+    border-width: 4px;
+    font-size: 75px;
+    width: 170px;
+    aspect-ratio: 0.866;
+    flex-shrink: 0;
+    clip-path: polygon(0 25%,50% 0,100% 25%,100% 75%,50% 100%,0 75%);
+    background: white;
+    color: purple;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+.container > div:nth-child(1){
+    transform: translate(-10%,47%); 
+}
+.container > div:nth-child(2){
+    transform: translateY(23%); 
+}
+.container > div:nth-child(3){
+    transform: translate(-10%,-1%); 
+}
+.container > div:nth-child(4){
+    transform: translateY(-25%); 
+}
+.container > div:nth-child(5){
+    transform: translate(-10%,-49%); 
+}
+
+.cell:hover {
+    transform: scale(1.02);
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.popup-content {
+    font-size: 20px;
+    background-color: white;
+    margin: 15% auto;
+    padding: 20px;
+    border-radius: 5px;
+    width: 400px;
+    text-align: center;
+}
+
+.close {
+    font-size: x-large;
+    cursor: pointer;
+}

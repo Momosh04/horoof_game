@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div>
+        <div class="cell" id="c1" onclick="showQuestion('ا'),getId(this)">أ</div>
+        <div class="cell" id="c2" onclick="showQuestion('ز'),getId(this)">ز</div>
+        <div class="cell" id="c3" onclick="showQuestion('د'),getId(this)">د</div>
+        <div class="cell" id="c4" onclick="showQuestion('م'),getId(this)">م</div>
+        <div class="cell" id="c5" onclick="showQuestion('ف'),getId(this)">ف</div>
+        </div>
+        <div>
+        <div class="cell" id="c6" onclick="showQuestion('ع'),getId(this)">ع</div>
+        <div class="cell" id="c7" onclick="showQuestion('ط'),getId(this)">ط</div>
+        <div class="cell" id="c8" onclick="showQuestion('ض'),getId(this)">ض</div>
+        <div class="cell" id="c9" onclick="showQuestion('ي'),getId(this)">ي</div>
+        <div class="cell" id="c10" onclick="showQuestion('س'),getId(this)">س</div>
+        </div>
+        <div>
+        <div class="cell" id="c11" onclick="showQuestion('ن'),getId(this)">ن</div>
+        <div class="cell" id="c12" onclick="showQuestion('ل'),getId(this)">ل</div>
+        <div class="cell" id="c13" onclick="showQuestion('ب'),getId(this)">ب</div>
+        <div class="cell" id="c14" onclick="showQuestion('ر'),getId(this)">ر</div>
+        <div class="cell" id="c15" onclick="showQuestion('ق'),getId(this)">ق</div>
+        </div>
+        
+        <div>
+            <div class="cell" id="c16" onclick="showQuestion('ح'),getId(this)">ح</div>
+            <div class="cell" id="c17" onclick="showQuestion('ظ'),getId(this)">ظ</div>
+            <div class="cell" id="c18" onclick="showQuestion('و'),getId(this)">و</div>
+            <div class="cell" id="c19" onclick="showQuestion('ت'),getId(this)">ت</div>
+            <div class="cell" id="c20" onclick="showQuestion('ج'),getId(this)">ج</div>
+        </div>
+        <div>
+        <div class="cell" id="c21" onclick="showQuestion('ص'),getId(this)">ص</div>
+        <div class="cell" id="c22" onclick="showQuestion('غ'),getId(this)">غ</div>
+        <div class="cell" id="c23" onclick="showQuestion('ك'),getId(this)">ك</div>
+        <div class="cell" id="c24" onclick="showQuestion('ث'),getId(this)">ث</div>
+        <div class="cell" id="c25" onclick="showQuestion('خ'),getId(this)">خ</div>
+        </div>
+    </div>
+
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <button style="color: orange; margin-right: 50px;" onclick="changeColor('orange')">orange</button>
+            <span class="close" onclick="closePopup()">x</span>
+            <button style="color: green; margin-left: 50px;" onclick="changeColor('rgb(14, 172, 14)')">green</button>
+
+            <p id="question-text"></p>
+            <button id="view-answer-btn" onclick="showAnswer()" style="margin-top:10px;">عرض الإجابة</button>
+            <p id="answer-text" style="display:none; margin-top:8px; font-weight:bold;"></p>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
